@@ -4,6 +4,6 @@ var mongoose = require('mongoose'),
 module.exports.start = function() {
   var app = express.init();
   app.listen(process.env.PORT, function() {
-    console.log('App listening on port', config.port);
+    console.log('App listening on port', process.env.PORT);
   });
 };
